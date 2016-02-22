@@ -55,7 +55,7 @@ class Tracer extends OpenTracing\Tracer
             } else {
                 $s = '';
                 for ($i = 0; $i < 8; $i++) {
-                    $s .= chr(mt_rand(0, 256));
+                    $s .= chr(mt_rand(0, 255));
                 }
 
                 return $s;
