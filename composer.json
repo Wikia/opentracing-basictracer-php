@@ -20,7 +20,7 @@
       "role": "Developer"
     }
   ],
-  "requires": {
+  "require": {
     "Wikia/opentracing-php": "*"
   },
   "autoload": {
