@@ -1,5 +1,5 @@
 {
-  "name": "Wikia/opentracing-basictracer-php",
+  "name": "wikia/opentracing-basictracer-php",
   "description": "Example implementation of a basic tracer built on top of http://opentracing.io/",
   "keywords": [
     "opentracing",
@@ -27,7 +27,7 @@
     }
   ],
   "require": {
-    "Wikia/opentracing-php": "*"
+    "wikia/opentracing-php": "*"
   },
   "autoload": {
     "psr-4": {
