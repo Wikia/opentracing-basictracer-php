@@ -4,7 +4,7 @@ namespace OpenTracing\Basic;
 
 use OpenTracing;
 
-class Tracer implements OpenTracing\Tracer
+class Tracer extends OpenTracing\Tracer
 {
 
     protected static $propagators = null;

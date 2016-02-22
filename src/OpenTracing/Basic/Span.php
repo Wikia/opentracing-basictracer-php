@@ -143,19 +143,6 @@ class Span extends OpenTracing\Span
     }
 
     /**
-     * A shorthand method that starts a child span given a parent span.
-     *
-     * @param string $operationName
-     * @param array $tags
-     * @param float $startTime
-     * @return Span
-     */
-    public function startChild($operationName, $tags = null, $startTime = null)
-    {
-        return $this->getTracer()->startSpan($operationName, $this, $tags, $startTime);
-    }
-
-    /**
      * Provides access to the Tracer that created this Span.
      *
      * @return Tracer
