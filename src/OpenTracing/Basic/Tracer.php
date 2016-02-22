@@ -3,6 +3,7 @@
 namespace OpenTracing\Basic;
 
 use OpenTracing;
+use OpenTracing\Exception\InvalidFormatException;
 
 class Tracer extends OpenTracing\Tracer
 {
@@ -83,7 +84,7 @@ class Tracer extends OpenTracing\Tracer
         $this->initPropagators();
 
         if (empty( self::$propagators[$format] )) {
-            return null;
+            throw new InvalidFormatException();
         }
 
         return self::$propagators[$format];
