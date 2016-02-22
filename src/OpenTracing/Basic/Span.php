@@ -101,7 +101,7 @@ class Span extends OpenTracing\Span
     }
 
     /**
-     * Stores Baggage in the span as a key/value pair.
+     * Stores Baggage Item in the span as a key/value pair.
      *
      * Enables powerful distributed context propagation functionality where
      * arbitrary application data can be carried along the full path of
@@ -120,7 +120,7 @@ class Span extends OpenTracing\Span
      * @param mixed $value
      * @return $this
      */
-    public function setBaggage($key, $value)
+    public function setBaggageItem($key, $value)
     {
         $this->data->baggage[$key] = $value;
 
@@ -128,7 +128,7 @@ class Span extends OpenTracing\Span
     }
 
     /**
-     * Retrieves value of the Baggage with the given key.
+     * Retrieves value of the Baggage Item with the given key.
      *
      * Returns null if key doesn't exist.
      *
@@ -137,7 +137,7 @@ class Span extends OpenTracing\Span
      * @param string $key
      * @return mixed
      */
-    public function getBaggage($key)
+    public function getBaggageItem($key)
     {
         return array_key_exists($key, $this->data->baggage) ? $this->data->baggage[$key] : null;
     }
