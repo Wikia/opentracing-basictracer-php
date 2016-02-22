@@ -88,7 +88,7 @@ class SplitBinaryPropagator extends Propagator
 
         $carrier
             ->setState($state)
-            ->setAttributes($baggage);
+            ->setBaggage($baggage);
     }
 
     private function formatId($id)
