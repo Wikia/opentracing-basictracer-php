@@ -20,6 +20,12 @@
       "role": "Developer"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Wikia/opentracing-php"
+    }
+  ],
   "require": {
     "Wikia/opentracing-php": "*"
   },
