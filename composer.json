@@ -31,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "OpenTracing\\": "src/"
+      "OpenTracing\\": "src/OpenTracing/"
     }
   },
   "extra": {
